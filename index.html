@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Générateur de Prompt Runway Gen-3</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Générateur de Prompt Runway Gen-3</h1>
+
+  <form method="POST">
+    <button type="submit">Générer un Prompt</button>
+  </form>
+
+  {% if prompt %}
+  <h2>Votre Prompt :</h2>
+  <pre>{{ prompt }}</pre>
+  {% endif %}
+</body>
+</html>
